@@ -18,6 +18,24 @@ To run your tests
 - run `npm test` to run all of the tests
 - run `npm test ##` to only run tests for challenge ## (i.e. 01)
 
+#### Code Challenges:
+- [arrayMethods](javascript/code-challenges/arrayMethods.js)
+- [filter](javascript/code-challenges/filter.js)
+- [forEach](javascript/code-challenges/forEach.js)
+- [map](javascript/code-challenges/map.js)
+- [moreArrayMethods](javascript/code-challenges/moreArrayMethods.js)
+- [morePractice](javascript/code-challenges/morePractice.js)
+- [Objects](javascript/code-challenges/Object.js)
+- [reduce](javascript/code-challenges/reduce.js)
+- [regex1](javascript/code-challenges/regex1.js)
+- [regex2](javascript/code-challenges/regex2.js)
+- [review](javascript/code-challenges/review.js)
+- [sort](javascript/code-challenges/sort.js)
+- [stringManipulation](javascript/code-challenges/stringManipulation.js)
+
 ### 401 Data Structures, Code Challenges
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+
+#### Code Challenges:
+- [Class 2](array-insert-shift/README.md)
