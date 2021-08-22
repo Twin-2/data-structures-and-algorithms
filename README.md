@@ -40,3 +40,4 @@ To run your tests
 #### Code Challenges:
 - [Class 2](array-insert-shift/README.md)
 - [Class 3](array-binary-search/README.md)
+- [Class 4](linked-list/README.md)
