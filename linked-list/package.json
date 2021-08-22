@@ -1,0 +1,19 @@
+{
+  "name": "linked-list",
+  "version": "1.0.0",
+  "description": "Linked Lists are a data structure for storing data. They are similar to arrays but have some key diferences. For one, LL's can be stored dynamically in memory whereas an array needs to have a block set aside that is as big as the array. However, LL's are slow to search whn trying to find a specific value.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose",
+    "code": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.0.6"
+  }
+}
