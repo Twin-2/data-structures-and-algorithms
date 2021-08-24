@@ -22,7 +22,7 @@ class LinkedList {
     }
 
     // adds a node at the searched value of the LL
-    insert(search, data) {
+    insertAfter(search, data) {
         let node = new Node(data);
         let current = this.head;
         let searchedNode = {};
@@ -33,6 +33,36 @@ class LinkedList {
                 node.next = searchedNode;
             }
             current = current.next;
+        } if (current.value === search) {
+            searchedNode = current.next;
+            current.next = node;
+            node.next = searchedNode;
+        }
+    }
+
+    insertBefore(search, data) {
+        let node = new Node(data);
+        if (this.head.value === search) {
+            let ll = this.head;
+            this.head = node;
+            node.next = ll;
+        } else {
+            let current = this.head;
+            let searchedNode = {};
+            let previousNode = this.head;
+            while (current.next) {
+                if (current.value === search) {
+                    searchedNode = current
+                    previousNode.next = node
+                    node.next = searchedNode;
+                }
+                previousNode = current
+                current = current.next;
+            } if (current.value === search) {
+                searchedNode = current
+                previousNode.next = node
+                node.next = searchedNode;
+            }
         }
     }
 
