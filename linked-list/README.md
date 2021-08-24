@@ -12,7 +12,9 @@ Linked lists usually have a big O of O(n) for a search and O(1) for adding to th
 Methods: 
 - append - add a new node at the end of the LL. 
     - Parameter: (value for the node)
-- insert - insert a new node before the desired value. 
+- insertBefore - insert a new node before the desired value. 
+    - Parameters: (value to search for, value for the new node)
+- insertAfter - insert a new node after the desired value. 
     - Parameters: (value to search for, value for the new node)
 - shift - add a new node to the beginning of the LL
     - Parameters: (value for the new node)
