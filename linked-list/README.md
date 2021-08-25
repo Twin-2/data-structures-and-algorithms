@@ -22,5 +22,7 @@ Methods:
     - Parameters: (value to search)
 - toString - outputs all the values of the nodes as a string showing the order
     - Parameters: none
+- nthFromEnd - outputs the value that is n positions from the end of the linked list. Uses index type notation; ie 0 will be the last, 1 will be second from last...
+    - Parameters: n (any **positive** integer)
 
 [Return](../README.md)  
