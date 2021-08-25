@@ -20,7 +20,6 @@ class LinkedList {
             current.next = node;
         }
     }
-
     // adds a node at the searched value of the LL
     insertAfter(search, data) {
         let node = new Node(data);
@@ -39,7 +38,6 @@ class LinkedList {
             node.next = searchedNode;
         }
     }
-
     insertBefore(search, data) {
         let node = new Node(data);
         if (this.head.value === search) {
@@ -65,7 +63,6 @@ class LinkedList {
             }
         }
     }
-
     // adds a value at the beginning of the LL
     shift(value) {
         let node = new Node(value);
@@ -77,7 +74,6 @@ class LinkedList {
             node.next = ll;
         }
     }
-
     // search ll and return true if contains value else false
     includes(value) {
         let current = this.head
@@ -93,7 +89,6 @@ class LinkedList {
         }
         return false
     }
-
     // returns a string of allthe VALUES. Ex: "{ a } -> { b } -> { c } -> NULL"
     toString() {
         let current = this.head;
@@ -104,6 +99,22 @@ class LinkedList {
         }
         string += `{ ${current.value} } -> NULL`;
         return string;
+    }
+
+    nthFromEnd(n) {
+        let reversedLL = [];
+        let current = this.head;
+        if (n < 0) { return 'Error, must search a positive integer' }
+        while (current.next) {
+            reversedLL.unshift(current.value)
+            current = current.next
+        }
+        reversedLL.unshift(current.value)
+        // console.log(reversedLL)
+        // console.log(reversedLL.length)
+        if (n > reversedLL.length) { return `Error, searched outside LL. LL length is only ${reversedLL.length}` }
+        if (n > reversedLL.length - 1) { return `Error, search uses array index type notation. Search is outside LL. LL length is ${reversedLL.length}` }
+        return reversedLL[n]
     }
 }
 

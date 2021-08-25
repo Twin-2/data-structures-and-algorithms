@@ -98,3 +98,39 @@ describe('Linked List Class', () => {
         expect(ll.toString()).toEqual('{ 1 } -> NULL');
     })
 })
+
+describe('LINKED-LIST KTH METHODS', () => {
+
+    it('should respond with error messege if K is greater than the length of the LL', () => {
+        let ll = new LL();
+        ll.append(1);
+        expect(ll.nthFromEnd(0)).toBe(1);
+        expect(ll.nthFromEnd(2)).toBe('Error, searched outside LL. LL length is only 1');
+    })
+
+    it('should respond with error messege if K is equal to the length of the LL', () => {
+        let ll = new LL();
+        ll.append(1);
+        expect(ll.nthFromEnd(0)).toBe(1);
+        expect(ll.nthFromEnd(1)).toBe('Error, search uses array index type notation. Search is outside LL. LL length is 1')
+    })
+
+    it('should respond error if K is negative', () => {
+        let ll = new LL();
+        ll.append(1);
+        ll.append(2);
+        expect(ll.nthFromEnd(-1)).toBe('Error, must search a positive integer')
+    })
+
+    it('should respond with the expected value for any k that is inside the LL', () => {
+        let ll = new LL();
+        ll.append(1);
+        ll.append(2);
+        ll.append(3);
+        ll.append(4);
+        expect(ll.nthFromEnd(0)).toBe(4);
+        expect(ll.nthFromEnd(1)).toBe(3);
+        expect(ll.nthFromEnd(2)).toBe(2);
+        expect(ll.nthFromEnd(3)).toBe(1);
+    })
+})
