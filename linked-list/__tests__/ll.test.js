@@ -1,6 +1,7 @@
 'use strict';
 
 const LL = require('../lib/ll.js');
+const zip = require('../lib/zip.js')
 
 describe('Linked List Class', () => {
 
@@ -133,4 +134,35 @@ describe('LINKED-LIST KTH METHODS', () => {
         expect(ll.nthFromEnd(2)).toBe(2);
         expect(ll.nthFromEnd(3)).toBe(1);
     })
+})
+
+describe('LINKED-LIST-ZIP', () => {
+
+    it('should return one ll when given two ll', () => {
+        let ll = new LL()
+        let ll2 = new LL();
+        ll.append(1);
+        ll.append(2);
+        ll.append(3);
+        ll2.append('a');
+        ll2.append('b');
+        ll2.append('c');
+        zip(ll, ll2);
+        expect(ll.toString()).toBe('{ 1 } -> { a } -> { 2 } -> { b } -> { 3 } -> { c } -> NULL')
+
+    })
+
+    it('should still return the zippered list even if one ll is longer than the other', () => {
+        let ll = new LL()
+        let ll2 = new LL();
+        ll.append(1);
+        ll.append(2);
+        ll2.append('a');
+        ll2.append('b');
+        ll2.append('c');
+        zip(ll, ll2);
+        expect(ll.toString()).toBe('{ 1 } -> { a } -> { 2 } -> { b } -> { c } -> NULL')
+    })
+
+
 })
