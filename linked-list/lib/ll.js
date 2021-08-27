@@ -116,6 +116,7 @@ class LinkedList {
         if (n > reversedLL.length - 1) { return `Error, search uses array index type notation. Search is outside LL. LL length is ${reversedLL.length}` }
         return reversedLL[n]
     }
+
 }
 
 module.exports = LinkedList;
