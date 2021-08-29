@@ -1,0 +1,19 @@
+{
+  "name": "stack-and-queue",
+  "version": "1.0.0",
+  "description": "Stacks and Queues are data structures. A stack follow FILO principle, meaning First In Last Out. A queue follow FIFO principle, meaning First In First Out.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "code": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.1.0"
+  }
+}
