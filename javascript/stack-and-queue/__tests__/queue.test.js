@@ -4,7 +4,7 @@ const Queue = require('../lib/queue.js');
 
 describe('QUEUE', () => {
 
-    it('should be able to instatiate an empty que', () => {
+    it('should be able to instatiate an empty queue', () => {
 
     })
 
