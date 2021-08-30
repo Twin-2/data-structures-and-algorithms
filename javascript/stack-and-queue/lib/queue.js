@@ -30,7 +30,7 @@ class Queue {
         }
         let dequeued = this.storage[this.front]
         delete this.storage[this.front]
-        this.front++
+        this.front = dequeued.next
         // for (let next in this.storage) {
         //     this.storage[next].next--
         //     console.log(this.storage[next].next)
