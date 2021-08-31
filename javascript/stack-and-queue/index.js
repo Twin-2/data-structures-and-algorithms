@@ -21,12 +21,12 @@ const queue = new Queue();
 
 queue.enqueue(1);
 queue.enqueue(2);
-// queue.dequeue();
+// // queue.dequeue();
 queue.enqueue(3);
-queue.enqueue(4);
-// queue.dequeue();
-queue.enqueue(5)
+// // queue.dequeue();
+// queue.enqueue(5)
 queue.dequeue();
+queue.enqueue(4);
 // console.log(queue.peek())
 
 console.log(queue)
