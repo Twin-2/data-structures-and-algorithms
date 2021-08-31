@@ -16,10 +16,15 @@ class Queue {
     //if the que is empty then it is the front,
     //else it's next is null and the previous node points to it
     enqueue(value) {
-        this.storage[this.queued++] = new Node(value, this.queued)
-        this.rear++
-        this.length = this.rear - this.front
-        // this.rear.next = null
+        if (this.length === 0) {
+            this.storage[this.queued++] = new Node(value, null)
+            this.length++
+        } else {
+            this.storage[this.rear].next = this.queued
+            this.storage[this.queued++] = new Node(value, null)
+            this.rear++
+            this.length = this.rear - this.front
+        }
         return this;
     }
 
@@ -30,11 +35,8 @@ class Queue {
         }
         let dequeued = this.storage[this.front]
         delete this.storage[this.front]
-        this.front = dequeued.next
-        // for (let next in this.storage) {
-        //     this.storage[next].next--
-        //     console.log(this.storage[next].next)
-        // }
+        this.front++
+        //  = dequeued.next
         this.length = this.rear - this.front
         return dequeued
     }
