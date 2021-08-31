@@ -6,8 +6,8 @@ const Node = require('./node.js');
 class Queue {
     constructor() {
         this.storage = {}
-        this.queued = 0;
-        this.front = 0;
+        this.queued = 0
+        this.front = 0
         this.rear = 0
         this.length = 0
     }
