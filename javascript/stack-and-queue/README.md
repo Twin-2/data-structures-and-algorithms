@@ -10,8 +10,13 @@ Use a linked list as the underlyting data storage. Then create a stack and a Que
 
 Create a queue with 2 stacks for data storage. This will be called PseudoQueue.
 
+Create a queue for an animal shelter. It should have standard FIFO rules with an exception. Dequeue should work on a preference base where the user passes in a type of animal they want and gets that over others that have been in the queue longer. 
+
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I used a whiteboard to thinkg through much of these code challenges. 
+
+![CC 12 animal shelter](https://user-images.githubusercontent.com/81482156/131616361-60ee8afd-2dc8-4815-9107-9a795262b5f2.png)
+
 
 
 ## API
@@ -30,5 +35,9 @@ Queue Methods:
 Pseudo Queue Methods:
 - enqueue (data to enqueue): adds a new node to a stack to be stored in the queue
 - dequeue: follows the FIFO pronciples and returns the first item added to the queue, that is at the bottom of the stack. 
+
+AnimalShelter Methods:
+- enqueue (animal type - string, age - number): adds an animal to the queue.
+- dequeue (animal type preference): dequeues the first type of your preference from the queue. If your preferencedoes not excist in the queue it will return the first item in the queue like normal. 
 
 [Return](../README.md)  
