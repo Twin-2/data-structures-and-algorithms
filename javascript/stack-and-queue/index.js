@@ -3,39 +3,41 @@
 const Stack = require('./lib/stack.js')
 const Queue = require('./lib/queue.js')
 const PseudoQueue = require('./lib/pseudoQueue.js')
+const AnimalShelter = require('./lib/animalShelter.js');
 
 const stack = new Stack();
 const queue = new Queue();
 const pseudoQueue = new PseudoQueue();
-
-// stack.push(1);
-// stack.push(2);
-// stack.push(3);
-// stack.push(4);
-// console.log('popped', stack.pop())
-// stack.pop()
-// stack.peek();
-// stack.pop()
-// stack.pop()
-// stack.isEmpty()
-
-// console.log(stack)
+const animalShelter = new AnimalShelter();
 
 // queue.enqueue(1);
 // queue.enqueue(2);
-// // // queue.dequeue();
-// queue.enqueue(3);
-// // // queue.dequeue();
-// // queue.enqueue(5)
 // queue.dequeue();
+// queue.enqueue(3);
+// queue.dequeue();
+// queue.enqueue(5)
+// queue.dequeue()
 // queue.enqueue(4);
-// // console.log(queue.peek())
+// console.log(queue.peek())
 
 // console.log(queue)
 
 pseudoQueue.enqueue(1)
 pseudoQueue.enqueue(2)
-pseudoQueue.enqueue(3)
-pseudoQueue.dequeue();
-pseudoQueue.enqueue(4)
+// pseudoQueue.enqueue(3)
+console.log('dequeue', pseudoQueue.dequeue())
+// pseudoQueue.enqueue(4)
 console.log('queue', pseudoQueue)
+
+
+// animalShelter.enqueue('dog', 7)
+// animalShelter.enqueue('dog', 12)
+// animalShelter.enqueue('dog', 5)
+// animalShelter.dequeue('cat')
+// animalShelter.enqueue('cat', 19)
+// animalShelter.enqueue('bird', 23)
+// animalShelter.dequeue('bird')
+// animalShelter.enqueue('cat', 1)
+// animalShelter.enqueue('bird', 23)
+// animalShelter.dequeue('bird')
+// console.log(animalShelter)

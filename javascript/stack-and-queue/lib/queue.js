@@ -23,21 +23,22 @@ class Queue {
             this.storage[this.rear].next = this.queued
             this.storage[this.queued++] = new Node(value, null)
             this.rear++
-            this.length = this.rear - this.front
+            this.length++
         }
         return this;
     }
 
     dequeue() {
         if (this.length === 0) {
-            console.log('queue is empty')
-            return 'Queue is emppty'
+            // console.log('queue is empty')
+            return 'Queue is empty'
         }
         let dequeued = this.storage[this.front]
         delete this.storage[this.front]
         this.front++
         //  = dequeued.next
-        this.length = this.rear - this.front
+        this.length--
+        if (this.length === 0) { this.rear = null }
         return dequeued
     }
 
@@ -46,11 +47,11 @@ class Queue {
     }
 
     isEmpty() {
-        if (this.front === null) {
-            console.log(true)
+        if (this.length === 0) {
+            // console.log(true)
             return true
         }
-        console.log(false)
+        // console.log(false)
         return false
     }
 }
