@@ -9,6 +9,7 @@ const stack = new Stack();
 const queue = new Queue();
 const pseudoQueue = new PseudoQueue();
 const animalShelter = new AnimalShelter();
+const validate = require('./lib/validateBrackets.js')
 
 // queue.enqueue(1);
 // queue.enqueue(2);
@@ -22,12 +23,12 @@ const animalShelter = new AnimalShelter();
 
 // console.log(queue)
 
-pseudoQueue.enqueue(1)
-pseudoQueue.enqueue(2)
+// pseudoQueue.enqueue(1)
+// pseudoQueue.enqueue(2)
 // pseudoQueue.enqueue(3)
-console.log('dequeue', pseudoQueue.dequeue())
+// console.log('dequeue', pseudoQueue.dequeue())
 // pseudoQueue.enqueue(4)
-console.log('queue', pseudoQueue)
+// console.log('queue', pseudoQueue)
 
 
 // animalShelter.enqueue('dog', 7)
@@ -41,3 +42,5 @@ console.log('queue', pseudoQueue)
 // animalShelter.enqueue('bird', 23)
 // animalShelter.dequeue('bird')
 // console.log(animalShelter)
+
+console.log(validate('()[[Extra Ch(aracters]]'))
