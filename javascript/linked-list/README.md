@@ -28,4 +28,4 @@ Linked lists usually have a big O of O(n) for a search and O(1) for adding to th
 -zip - takes in two LL and concatinates them, alternating nodes.
   - parameters: (lla, llb). returns the 'zippered' ll as lla.
 
-[Return](../README.md)  
+[Return](../../README.md)  

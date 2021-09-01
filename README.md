@@ -40,5 +40,6 @@ To run your tests
 #### Code Challenges:
 - [Class 2](array-insert-shift/README.md)
 - [Class 3](array-binary-search/README.md)
-- [Linked-Lists](linked-list/README.md)
+- [Linked-Lists](javascript/linked-list/README.md)
+- [Stacks-and-queues](javascript/stack-and-queue/README.md)
 
