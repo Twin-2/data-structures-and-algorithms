@@ -36,10 +36,11 @@ Pseudo Queue Methods:
 - enqueue (data to enqueue): adds a new node to a stack to be stored in the queue
 - dequeue: follows the FIFO pronciples and returns the first item added to the queue, that is at the bottom of the stack. 
 
-
 AnimalShelter Methods:
 - enqueue (animal type - string, age - number): adds an animal to the queue.
 - dequeue (animal type preference): dequeues the first type of your preference from the queue. If your preferencedoes not excist in the queue it will return the first item in the queue like normal. 
 
-[Return](../../README.md)  
+Validate Bracket function:
+- given an input of a string will return a boolean for whether or not the string contains appropriately paired brackets.
 
+[Return](../../README.md)  
