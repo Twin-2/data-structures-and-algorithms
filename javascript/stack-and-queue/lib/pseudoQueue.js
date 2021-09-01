@@ -12,18 +12,20 @@ class PseudoQueue {
         // this.queued = 0
         this.front = 0
         this.rear = 0
-        // this.length = 0
+        this.length = 0
     }
 
     enqueue(value) {
         this.stackA.push(value);
         this.front = this.stackA[0]
         this.rear = this.stackA[this.stackA.top]
+        this.length++
         // console.log('stacka', this.stackA)
         return this
     }
 
     dequeue() {
+        if (this.length === 0) { return 'Queue is empty' }
         while (this.stackA.length > 0) {
             let popped = this.stackA.pop();
             console.log('popped', popped)
@@ -38,7 +40,8 @@ class PseudoQueue {
         this.front = this.stackA[0]
         this.rear = this.stackA[this.stackA.top]
         console.log(dequeued.value)
-        return this.stackA
+        this.length--
+        return dequeued
     }
 
 }
