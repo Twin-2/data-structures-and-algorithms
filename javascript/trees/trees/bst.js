@@ -24,14 +24,17 @@ class BST extends BT {
 
     contains(value) {
         let _climb = (node, value) => {
+            // console.log('111', node.value)
             if (!node) return false
-            if (node.value === value) return true
-            if (value < node.value) _climb(node.left, value)
-            if (value > node.value) _climb(node.right, value)
 
+            if (node.value === value) return true
+
+            if (value < node.value) return _climb(node.left, value)
+
+            if (value > node.value) return _climb(node.right, value)
         }
-        _climb(this.root, value)
-        return _climb()
+        let result = _climb(this.root, value)
+        return result
     }
 
 }
