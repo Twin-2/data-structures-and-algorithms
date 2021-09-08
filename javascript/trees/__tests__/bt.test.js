@@ -58,4 +58,9 @@ describe('BINARY SEARCH TREE', () => {
         let bredthFirst = bt.levelSearch();
         expect(bredthFirst).toEqual([1, 2, 3, 10, 4, 5, 6])
     })
+    it('should be able to find the highest value in the tree', () => {
+        let bt = new BT(sampleTree);
+        let max = bt.findMax()
+        expect(max).toEqual(6)
+    })
 })
