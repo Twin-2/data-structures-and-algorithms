@@ -84,6 +84,18 @@ class binaryTree {
         _climb(this.root)
         return results
     }
+
+    findMax() {
+        let max = 0
+
+        let _climb = (node) => {
+            if (node.value > max) max = node.value
+            if (node.left) _climb(node.left)
+            if (node.right) _climb(node.right)
+        }
+        _climb(this.root)
+        return max
+    }
 }
 
 module.exports = binaryTree;
