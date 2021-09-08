@@ -42,4 +42,4 @@ To run your tests
 - [Class 3](array-binary-search/README.md)
 - [Linked-Lists](javascript/linked-list/README.md)
 - [Stacks-and-queues](javascript/stack-and-queue/README.md)
-
+- [Trees](javascript/trees/README.md)
