@@ -43,3 +43,4 @@ To run your tests
 - [Linked-Lists](javascript/linked-list/README.md)
 - [Stacks-and-queues](javascript/stack-and-queue/README.md)
 - [Trees](javascript/trees/README.md)
+- [Insertion Sort](javascript/insertion-sort/README.md)
