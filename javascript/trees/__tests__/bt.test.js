@@ -1,6 +1,9 @@
 'use strict';
 
 const BT = require('../trees/bt.js')
+const util = require('util');
+
+
 let sampleTree = {
     value: 1,
     left: {
@@ -52,15 +55,15 @@ describe('BINARY SEARCH TREE', () => {
         let bt = new BT()
         expect(bt.root).toBe(null)
     })
+    it('should be able to find the highest value in the tree', () => {
+        let bt = new BT(sampleTree);
+        let max = bt.findMax()
+        expect(max).toEqual(6)
+    })
     it('should be able to add a node to the tree following a bredth filling approach', () => {
         let bt = new BT(sampleTree);
         bt.addNode(10)
         let bredthFirst = bt.levelSearch();
         expect(bredthFirst).toEqual([1, 2, 3, 10, 4, 5, 6])
-    })
-    it('should be able to find the highest value in the tree', () => {
-        let bt = new BT(sampleTree);
-        let max = bt.findMax()
-        expect(max).toEqual(6)
     })
 })
