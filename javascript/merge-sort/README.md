@@ -8,9 +8,7 @@ No whiteboard was done for this assignment, an article was written instead, foun
 
 ## Approach & Efficiency
 
-This approach seems to be the best way to inplace sort an array but it does require a large amount of time.
-
-The plus side is taht it does not require much space.
+This approach has a fast run time with a Big O of O(n Log(n)) and it also has a space complexity of O(n).
 
 ## Solution
 
