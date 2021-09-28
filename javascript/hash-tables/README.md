@@ -21,3 +21,5 @@ The Hashtable class has the following methods.
 - Contains(key): retuns a boolean noting if the key is in the Hashtable or not.
 
 - Hash(key): returns an index number within the bounds of the Hashtables' array.
+
+Repeated Words function will return the first word to repeat in a string or 'No repeated words' if there are none.
