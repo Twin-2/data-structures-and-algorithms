@@ -25,3 +25,5 @@ The Hashtable class has the following methods.
 Repeated Words function will return the first word to repeat in a string or 'No repeated words' if there are none.
 
 Tree Intersection function will return any shared nodes of two binary trees.
+
+![tree-intersection](https://user-images.githubusercontent.com/81482156/135204584-7592303c-de18-404b-a2c4-8afe2539044a.png)
