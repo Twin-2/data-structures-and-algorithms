@@ -1,33 +1,27 @@
 'use strict';
 const util = require('util')
-const Hashtable = require('./hashTable');
-const repeatedWord = require('./repeated-word')
+const Hashtable = require('./functions/hashTable');
+const repeatedWord = require('./functions/repeated-word');
+const BT = require('../trees/trees/bt.js');
+const treeIntersection = require('./functions/tree-intersection.js');
+
+let bt1 = new BT();
+let bt2 = new BT();
 let people = new Hashtable(5);
 
+bt1.addNode(1)
+bt1.addNode(2)
+bt1.addNode(3)
+bt1.addNode(4)
+bt1.addNode(5)
+bt1.addNode(6)
 
-people.add('David', 25)
-people.add('Daniel', 25)
-people.add('Jonathan', 30)
-people.add('Able', 32)
-people.add('Esther', 35)
-people.add('Jonah', 37)
-people.add('Caleb', 39)
-people.add('Naomi', 41)
-people.add('Mom', 69)
-people.add('Dad', 73)
-// if (people.contains('David')) {
-//     console.log('yup')
-// } else {
-//     console.log('Nope')
-// }
+bt2.addNode(77)
+bt2.addNode(51)
+bt2.addNode(62)
+bt2.addNode(7)
+bt2.addNode(8)
+bt2.addNode(9)
 
-// console.log(repeatedWord('a b c d a'))
-// people.add('the', 0)
-// people.add('cow', 18)
-// people.add('Jumped', 0)
-// people.add('jumped', 0)
-// console.log(util.inspect(people, { showHidden: false, depth: null }))
-// console.log(people.contains('Jumped'))
-// console.log(people.contains('Mom'))
-// console.log(people.contains('cow'))
-console.log(repeatedWord('The Cow jumped over moon'))
+// console.log(util.inspect(bt1, { showHidden: false, depth: null }))
+console.log(treeIntersection(bt1, bt2))

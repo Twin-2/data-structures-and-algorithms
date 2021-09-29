@@ -1,6 +1,6 @@
 'use strict'
 
-const repeatedWord = require('../repeated-word');
+const repeatedWord = require('../functions/repeated-word');
 
 let uniqueString = 'Hello, i am unique';
 let repeatString1 = 'This word repeats this';

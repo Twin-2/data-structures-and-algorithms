@@ -1,7 +1,7 @@
 'use strict';
 const util = require('util')
-const Node = require('../linked-list/lib/node')
-const LL = require('../linked-list/lib/ll')
+const Node = require('../../linked-list/lib/node')
+const LL = require('../../linked-list/lib/ll')
 
 
 class Hashtable {
