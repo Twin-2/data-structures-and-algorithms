@@ -41,3 +41,5 @@ Goal is to have an output that has a set of key value pairs based on the keys fr
 I wrote two function that achieve this goal. One is optimized for space by returning the left hashmap with all the values of the matching right keys added into it. The second creates an array of arrays with the first index of each array as the key and the remaining indexes as the values.
 
 Whiteboard:
+
+![left join](https://user-images.githubusercontent.com/81482156/135399426-a6a86cbe-9ff3-4e85-b49a-a18be8f409f0.png)
